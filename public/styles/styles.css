@@ -23,9 +23,9 @@ h1 {
 }
 
 .game div {
-  height: 32px;
-  width: 32px;
-  border: 2px solid #eee;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #eee;
   background-color: #eee;
   float: left;
 }
