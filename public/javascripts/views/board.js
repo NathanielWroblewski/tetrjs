@@ -23,7 +23,7 @@ Tetris.Views.Board = function(config) {
   this.color = function(shape) {
     switch(shape) {
       case 'O': return 'red'
-      case '7': return 'orange'
+      case 'F': return 'orange'
       case 'L': return 'yellow'
       case 'S': return 'blue'
       case 'Z': return 'green'

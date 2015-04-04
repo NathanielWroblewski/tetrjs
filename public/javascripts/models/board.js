@@ -3,6 +3,8 @@ namespace('Tetris.Models')
 var EMPTY_CELL = 0
 
 Tetris.Models.Board = function(config) {
+  this.gameOver = false
+  this.score  = 0
   this.height = 20
   this.width  = 10
   this.board  = []
@@ -48,6 +50,8 @@ Tetris.Models.Board = function(config) {
 
   this.checkLines = function() {
     while (this.findLine()) {
+      this.score++
+
       var line = this.findLine()
 
       this.remove(line)
