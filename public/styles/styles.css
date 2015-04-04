@@ -13,7 +13,7 @@ h1 {
 }
 
 .container {
-  width: 350px;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -23,9 +23,9 @@ h1 {
 }
 
 .game div {
-  height: 31px;
-  width: 31px;
-  border: 2px solid #eee;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #eee;
   background-color: #eee;
   float: left;
 }
