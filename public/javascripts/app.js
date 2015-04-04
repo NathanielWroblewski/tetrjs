@@ -1,5 +1,5 @@
 !function() {
-  Tetris.interval = 1000
+  Tetris.interval = 900
 
   var piece = new Tetris.Models.Piece()
   var board = new Tetris.Models.Board({
@@ -11,10 +11,10 @@
   })
 
   board.on('change', function() {
-    if (board.score < 10) {
-      return Tetris.interval = 1000 - (board.score * 100)
-    } else if (board.score > 9 && board.score < 15) {
-      return Tetris.interval = 100 - ((board.score - 9) * 10)
+    if (Tetris.interval > 100) {
+      return Tetris.interval -= Math.floor(board.score / 4) * 100
+    } else if (Tetris.interval <= 100) {
+      return Tetris.interval = Math.floor(Tetris.interval * 0.9)
     }
   })
 

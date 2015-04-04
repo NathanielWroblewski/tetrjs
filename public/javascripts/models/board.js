@@ -89,8 +89,8 @@ Tetris.Models.Board = function(config) {
   }
 
   this.endGame = function() {
-    alert('Game Over')
     this.gameOver = true
+    alert('Game Over.  Score: ' + (this.score * 100))
   }
 
   this.placeable = function(indices) {
